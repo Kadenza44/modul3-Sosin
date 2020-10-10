@@ -1,41 +1,63 @@
+/* верхнее меню сайта (шапка) */
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	max-width: 1579px;
+	background-color: rgb(246, 242, 242);
+	padding-top: 29px;
+	margin: 0 auto;
+
+}
 .header {
-	min-height: 89px;
-	margin-top: 29px;
+	margin: 0 auto;
 	max-width: 1249px;
-	text-align: center;
 	background-color: rgb(0, 0, 0);
+	padding-left: 0;
 }
 .header-menu {
+	/* padding-right: 3%; */
+	text-align: center;  
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 .header-menu > a {
-	padding: 44px 5%;
+	font-family: 'Open-sans', sans-serif;
+	font-weight: 700;
 	font-size: 14px;
- 	font-weight: 700;
- 	text-transform: uppercase;
+	margin: 0 29px 0 -17px;
+	padding: 44px 23px 29px 23px;
+	text-transform: uppercase;
  	text-decoration: none;
  	color: white;
 }
 .header-menu > a:hover {
+	color: white;
+	text-decoration: none;
 	background-color: rgb(255, 63, 64);
 }
 @media screen and (max-width: 600px) {
-	.header {
-		min-height: 54px;
-	}
 	.header-menu > a {
-		padding: 27px 2%;
+		padding: 3% 2%;
 		font-size: 13px;
+		margin-right: 7%;
 	}
 } 
+/* Блок контента 1 */
+.back-color {
+	max-width: 1579px;
+	margin: 0 auto;
+	padding-top: 89px;
+	padding-bottom: 109px;
+	background-color: rgb(246, 242, 242);
+}
 .content {
 	display: flex;
 	justify-content: space-between;
-	/* flex-wrap: wrap; */
 	max-width: 1249px;
-	margin-top: 50px;
+	margin: 0 auto;
 }
 .text {
 	width: 50%;
@@ -44,27 +66,27 @@
 	margin: 0px;
 	padding: 0px;
 	text-transform: uppercase;
-	font-size: 60px;
-	/* font-weight: 800; */
 }
 .h1-fonts {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
-}
-.text > p {
-	margin-top: 40px;
-	margin-bottom: 60px;
-	font-size: 16px;
-	/* font-weight: 400; */
+	font-size: 60px;
+	line-height: 1.2;
+	word-spacing: 9px;
 }
 .p-fonts {
-	font-family: 'Dancing Script', cursive;
-	font-weight: 400;
+	margin-top: 19px;
+	margin-bottom: 57px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400; 
+	line-height: 28px;
 }
 .paint {
 	max-width: 551px;
 	max-height: 356px;	
 	margin-left: 10px;
+	margin-top: 14px;
 }
 .sobaka {
 	width: 100%;
@@ -78,17 +100,22 @@
 	text-align: center;
 	line-height: 55px;
 	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 	background-color: rgb(255, 45, 45);
 	color: rgb(255, 255, 255);
 	}
+.button:hover {
+	text-decoration: none;
+	color: white;
+}	
 @media screen and (max-width: 975px) {
 	.text {
 		width: 60%;
 	}
 	.text > h1 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.text > p {
 		margin-top: 20px;
@@ -104,16 +131,535 @@
 	.text {
 		width: 100%;
 	}
-
 }
-footer {
+/* Блок контента 2 */
+.content1 {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1249px;
+	margin: 60px auto 0 auto;
+}
+.doYouKnow {
+	max-width: 45%;
+	margin-right: 5%;
+}
+.doYouKnow > h2 {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+}
+.doYouKnow > p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 41px 0 85px 0;
+}
+.doYouKnow > a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-decoration: none;
+	color: rgb(255, 45, 45);
+	padding: 12px 59px;
+	border: 2px solid rgb(255, 45, 45);
+	border-radius: 6px;
+}
+.doYouKnow > a:hover {
+	text-decoration: none;
+	color: rgb(255, 45, 45);
+}
+.weCan {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 50%;
+	padding-top: 50px;
+}
+.weCanItems {
+	max-width: 46%;
+	padding: 0px 0px 32px 19px;
+}
+.weCanItems > p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.weCanItems > h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	margin-top: 27px;
+	margin-bottom: 5px;
+}
+.content1-line {
+	height: 2px;
+	max-width: 1251px;
+	margin-top: 66px;
+	border: none;
+	background-color: rgb(236, 236, 236);
+}
+@media screen and (max-width: 750px) {
+.doYouKnow {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.weCan {
+	max-width: 100%;
+}
+}
+@media screen and (max-width: 500px) {
+	.weCanItems {
+		max-width: 100%;
+	}
+	.doYouKnow > h2 {
+		font-size: 37px;
+	}
+}
+/* Блок контента 3 */
+.content2 {
+	max-width: 1249px;
+	margin: 94px auto;
+	padding-left: 30px;
+}
+.content2-1 {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 537px;
+}
+.content2-1 > h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.content2-1 > p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 33px;
+	margin-top: 17px;
+}
+.line {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(255, 45, 45);
+	width: 134px;
+	height: 3px;
+}
+.menu2 {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	max-width: 1249px;
+	margin-top: 86px;
+	margin-bottom: 59px;
+}
+.menu2 > li {
+	margin-right: 4%;
+}
+
+.menu2 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+}
+.fotoContent2 {
+	max-width: 1249px;
+	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
+}
+.fotoContent2 img {
+	flex: 1 1 23%;
+	/* max-width: 293px;
+	max-height: 301px; */
+	height: 301px;
+	object-fit: cover;
+	margin-right:  15px;
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 700px) {
+	.menu2 {
+		padding: 0;
+		flex-wrap: wrap;
+	}
+	.menu2 a {
+		font-size: 18px;
+	}
+}
+/* Шапка контента 4 */
+.contentAboutTeam {
+	margin: 0px auto 0px auto;
+}
+.blokHatContent4 {
+	max-width: 1249px;
+	margin: 0 auto; 
+}
+.hatContent4 {
+	max-width: 478px;
+}
+.hatContent4 > h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	text-transform: uppercase;
+	margin-top: -3px;
+	margin-bottom: 0;
+	margin-left: 0px;
+}
+.hatContent4 > p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 27px;
+}
+.hatContent4 > hr {
+	border: none;
+	background-color: rgb(255, 45, 45);
+	height: 2px;
+	width: 134px;
+	margin: 0;
+	margin-left: 12px;
+}
+/* Пробую гриды (Инфа о команде) */
+.aboutTeam {
+	margin: 0 auto;
+	margin-top: 58px;
+	max-width: 1249px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(2, auto);
+}
+
+.fotoDirik {
+	align-self: flex-start;
+	grid-row: 1 / 3;
+	grid-column: 1 / 2;
+}
+.meetDirik {
+	margin-top: 16px;
+	margin-left: 70Px;
+}
+.meetDirik > h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.meetDirik > p {
+	margin-top: 20px;
+	margin-bottom: 49px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+.linkAboutTeam > a {
+	margin-right: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;	
+	font-style: italic;
+	text-decoration: none;
+	color: black;
+}
+.ezikTeam {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-top: 62px;
+	margin-left: 68px;
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+}
+.Man {
+	max-width: 199px;
+	max-height: 217px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+	position: relative;
+}
+.manName {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0;
+	visibility: hidden;
+	width: 100%;
+	bottom: 0;
+}
+.Man:hover .manName {
+	visibility: visible;
+	cursor: pointer;
+}
+@media screen and (max-width: 820px) {
+	.hatContent4 {
+		margin: 0 auto;
+	}
+	.aboutTeam {
+	grid-template-columns: repeat(1, auto);
+	grid-template-rows: repeat(3, auto);
+	}
+	.fotoDirik {
+		margin: 0 auto;
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+	}
+	.meetDirik {
+		grid-row: 2 / 3;
+		grid-column: 1 / 2;
+	}
+	.ezikTeam {
+		grid-row: 3 / 4;
+		grid-column: 1 / 2;
+	}
+}
+/* Блок подписки контент 5 */
+.subscribe-blok {
+	margin: 0 auto;
+	margin-top: 94px;
+	background-color: rgb(44, 44, 44);
+	max-width: 1579px;
+	height: 516px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.subscribeBlokElements > h2 {
+	margin: 0;
+	padding: 0;
+	margin-top: 144px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	letter-spacing: 1px;
+	color: rgb(255, 255, 255);
+}
+.subscribeBlokElements > p {
+	margin-top: 12px;
+	margin-bottom: 60px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+.subscribeEmail {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 28px 315px 28px 29px;
+	border: none;
+	border-radius: 6px;
+}
+.subscribeButton {
+	padding: 27px 58px;
+	margin-left: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 45, 45);
+	border: none;
+	border-radius: 6px;
+}
+@media screen and (max-width: 780px) {
+	.subscribeBlokElements > h2 {
+		margin-top: 20%;
+		font-size: 30px;
+	}
+	.subscribeBlokElements > p {
+		margin-bottom: 3%;
+	}
+	.subscribeButton {
+		margin-top: 10px;
+		padding: 3% 3%;
+	}
+	.subscribeEmail {
+		padding: 3% 3%;
+	}
+
+}
+/* Блок для оставления контактов */
+.contactSection {
+	max-width: 1579px;
+	margin: 0 auto;
+	margin-top: 92px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(2, auto);
+}
+.getInTouch {
+	padding-left: 52px;
+	max-width: 753px;
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+.getInTouch > h2 {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	text-transform: uppercase;
+}
+.getInTouch > p {
+	margin-top: 33px;
+	margin-bottom:  67px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+.getInTouch > hr {
+	margin: 0;
+	background-color: rgb(255, 45, 45);
+	border: none;
+	height: 2px;
+	width: 134px;
+}
+.contactBox {
+	padding-left: 52px;
+	margin-top: 77px;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 730px;
+	grid-row: 2/3;
+	grid-column: 1/2;
+}
+.nameContact {
+	padding: 0;
+	margin: 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin-right: 10%;
+	width: 45%;
+	max-height: 71px;
+	background-color: rgb(246, 242, 242);
+	border: none;
+	border-radius: 6px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+.emailContact {
+	padding: 0;
+	margin: 0;
+	width: 45%;
+	max-height: 71px;
+	background-color: rgb(246, 242, 242);
+	border: none;
+	border-radius: 6px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+.messageContact {
+	margin-top: 50px;
+	padding-bottom: 27%;
+	padding-top: 3%;
+	max-height: 273px;
+	width: 100%;
+	background-color: rgb(246, 242, 242);
+	border: none;
+	border-radius: 6px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+.backgroundAddress {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-row: 2/3;
+	grid-column: 2/3;
+	background-color: rgb(44, 44, 44);
+	max-width: 730px;
+	margin-top: 77px;
+}
+.addressInfo {
+	margin-left: 11%;
+	margin-top: 10%;
+	max-width: 315px;
+}
+.addressInfo > h3 {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+}
+.contactBox > button {
+	width: 100%;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	margin-top: 46px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	background-color: rgb(255, 59, 59);
+	border: none;
+	border-radius: 6px;
+}
+.addressInfo > address {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: white;
+}
+@media screen and (max-width: 600px) {
+	.contactSection {
+		grid-template-columns: repeat(1, auto);
+		grid-template-rows: repeat(3, auto);
+	}	
+	.getInTouch {
+		padding-left: 0;
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+	.contactBox {
+		padding-left: 0;
+		grid-row: 2/3;
+		grid-column: 1/2;
+	}
+	.backgroundAddress {
+		grid-row: 3/4;
+		grid-column: 1/2;
+	}
+}
+/* Подвал */
+footer {
+	margin: 0 auto;
+	margin-top: 125px;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	min-height: 113px;
-	max-width: 1249px;
+	max-width: 1579px;
 	background-color: rgb(48, 48, 48);
 	color: rgb(184, 184, 184);
+}
+footer > p {
+	margin-right: 59%;
 }
 
 
